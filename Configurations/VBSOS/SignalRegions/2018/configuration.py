@@ -2,7 +2,7 @@
 
 
 tag = '2018_sr'
-outputDir = '2018_sr'
+outputDir = 'rootFile'
 treeName = 'Events'
 
 # luminosity to normalize to

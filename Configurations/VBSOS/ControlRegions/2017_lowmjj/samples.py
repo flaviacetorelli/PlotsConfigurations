@@ -1,11 +1,13 @@
 import os
 import inspect
 
+
 configurations = os.path.realpath(inspect.getfile(inspect.currentframe())) # this file
-configurations = os.path.dirname(configurations) # ggH2016
+configurations = os.path.dirname(configurations) # 2016
+configurations = os.path.dirname(configurations) # ControlRegion
 configurations = os.path.dirname(configurations) # Differential
 configurations = os.path.dirname(configurations) # Configurations
-configurations = os.path.dirname(configurations) # Configurations
+
 from LatinoAnalysis.Tools.commonTools import getSampleFiles, getBaseW, addSampleWeight
 
 def nanoGetSampleFiles(inputDir, sample):

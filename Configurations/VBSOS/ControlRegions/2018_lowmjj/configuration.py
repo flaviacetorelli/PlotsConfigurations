@@ -1,11 +1,12 @@
 # example of configuration file
 
-tag = '2016_cr'
-outputDir = '2016_cr'
+
+tag = '2018_lowmjj'
+outputDir = 'rootFile'
 treeName = 'Events'
 
 # luminosity to normalize to
-lumi = 35.9
+lumi = 59.74
 
 # file with TTree aliases
 aliasesFile = 'aliases.py'
@@ -24,6 +25,6 @@ plotFile = 'plot.py'
 
 # used by mkPlot to define output directory for plots
 # different from "outputDir" to do things more tidy
-outputDirPlots = '/eos/user/f/fcetorel/www/VBS_OS/test/2016/cr'
+outputDirPlots = '/eos/user/f/fcetorel/www/VBS_OS/test/2018/low_mjj'
 # nuisances file for mkDatacards and for mkShape
 #nuisancesFile = 'nuisances.py'

@@ -4,7 +4,8 @@ import copy
 import inspect
 
 configurations = os.path.realpath(inspect.getfile(inspect.currentframe())) # this file
-configurations = os.path.dirname(configurations) # ggH2016
+configurations = os.path.dirname(configurations) # 2016
+configurations = os.path.dirname(configurations) # ControlRegion
 configurations = os.path.dirname(configurations) # Differential
 configurations = os.path.dirname(configurations) # Configurations
 
@@ -156,7 +157,6 @@ btagSFSource = '%s/src/PhysicsTools/NanoAODTools/data/btagSF/DeepCSV_2016LegacyS
 
 aliases['Jet_btagSF_shapeFix'] = {
     'linesToAdd': [
-        'gSystem->Load("libLatinoAnalysisMultiDraw.so")',
         'gSystem->Load("libCondFormatsBTauObjects.so");',
         'gSystem->Load("libCondToolsBTau.so");',
         'gSystem->AddIncludePath("-I%s/src");' % os.getenv('CMSSW_RELEASE_BASE'),
@@ -246,8 +246,7 @@ aliases['SFweightMuDown'] = {
 
 aliases['nllWOTF'] = {
 
-    'linesToAdd': [        'gSystem->Load("libLatinoAnalysisMultiDraw.so")',
-                           '.L %s/Differential/nllW.cc+' % configurations],
+    'linesToAdd': [ '.L %s/Differential/nllW.cc+' % configurations],
     'class': 'WWNLLW',
     'args': ('central',),
     'samples': ['WW']

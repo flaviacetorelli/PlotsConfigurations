@@ -7,6 +7,7 @@
 # Groups of samples to improve the plots.
 # If not defined, normal plots is used
 #
+
 groupPlot['top']  = {  
                   'nameHR' : 'tW and t#bar{t}',
                   'isSignal' : 0,
@@ -60,14 +61,21 @@ groupPlot['Higgs']  = {
   
 
             }
+'''
 
+groupPlot['all_bkg']  = {
+                  'nameHR' : 'all_bkg',
+                  'isSignal' : 0,
+                  'color': 921,
+		  'samples'  : ['qqH_hww', 'ggH_hww','Fake_em','Fake_me','Fake_mm','Fake_ee', 'Vg', 'VgS_H', 'VgS_L','VZ', 'VVV','WpWmJJ_QCD_noTop', 'DY','top' ]                                                                             
+              }
+'''
 groupPlot['WWewk']  = {
                   'nameHR' : 'WpWmJJ_EWK_noTop',
                   'isSignal' : 1,
                   'color': 2,
 		  'samples'  : [ 'WWewk']                                                                             
               }
-
 #plot = {}
 
 # keys here must match keys in samples.py    

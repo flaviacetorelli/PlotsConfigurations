@@ -13,11 +13,11 @@ groupPlot['top']  = {
                   'color': 400,   # kYellow
                   'samples'  : ['top']
               }
-groupPlot['WpWmJJ_QCD_noTop']  = {  
+groupPlot['WWqcd']  = {  
                   'nameHR' : 'WpWm_QCD_noTop',
                   'isSignal' : 0,
                   'color': 851, # kAzure -9 
-                  'samples'  : ['WpWmJJ_QCD_noTop']
+                  'samples'  : ['WWqcd']
               }
 
 groupPlot['DY']  = {  
@@ -49,7 +49,7 @@ groupPlot['Fake']  = {
                   'nameHR' : 'Non-prompt',
                   'isSignal' : 0,
                   'color': 921,    # kGray + 1
-                  'samples'  : ['Fake_em', 'Fake_me', 'Fake_mm', 'Fake_ee']
+                  'samples'  : ['Fake_em', 'Fake_me', 'Fake_ee', 'Fake_mm']
               }
 groupPlot['Higgs']  = {  
                   'nameHR' : 'Higgs',
@@ -126,7 +126,7 @@ plot['WW']  = {
                   'isData'   : 0 ,
                   'color': 7 #                                                                           
               }
-plot['WpWmJJ_QCD_noTop']  = {
+plot['WWqcd']  = {
                   'nameHR' : 'WpWmJJ_QCD_noTop',
                   'isSignal' : 0,
                   'isData'   : 0 ,
@@ -164,6 +164,7 @@ plot['Fake_mm']  = {
              }
 
 
+
 # HWW 
 
 
@@ -187,7 +188,7 @@ plot['DATA']  = {
                 'color': 1 ,  
                 'isSignal' : 0,
                'isData'   : 1 ,
-               'isBlind'  : 1
+               'isBlind'  : 0
           }
 plot['WWewk']  = {
                   'nameHR' : 'WpWmJJ_EWK_noTop',
@@ -195,12 +196,4 @@ plot['WWewk']  = {
                   'isData'   : 0 ,
                   'color': 8                                                                             
               }
-'''
-plot['WWewk_bug']  = {
-                  'nameHR' : 'WpWmJJ_EWK_noTop bug',
-                  'isSignal' : 1,
-                  'isData'   : 0 ,
-                  'color': 8                                                                             
-              }
-'''
 

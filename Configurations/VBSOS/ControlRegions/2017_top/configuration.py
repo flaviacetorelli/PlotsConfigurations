@@ -1,7 +1,7 @@
 # example of configuration file
 
 
-tag = '2017_sr'
+tag = '2017_top'
 outputDir = 'rootFile'
 treeName = 'Events'
 
@@ -26,6 +26,6 @@ plotFile = 'plot.py'
 structureFile = 'structure.py'
 # used by mkPlot to define output directory for plots
 # different from "outputDir" to do things more tidy
-outputDirPlots = '/eos/user/f/fcetorel/www/VBS_OS/test/2017/sr'
+outputDirPlots = '/eos/user/f/fcetorel/www/VBS_OS/test/2017/top'
 # nuisances file for mkDatacards and for mkShape
 #nuisancesFile = 'nuisances.py'

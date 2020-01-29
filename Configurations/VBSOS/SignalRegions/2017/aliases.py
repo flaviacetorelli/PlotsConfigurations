@@ -6,6 +6,7 @@ configurations = os.path.realpath(inspect.getfile(inspect.currentframe())) # thi
 configurations = os.path.dirname(configurations) # ggH2016
 configurations = os.path.dirname(configurations) # Differential
 configurations = os.path.dirname(configurations) # Configurations
+configurations = os.path.dirname(configurations) # Configurations
 
 #aliases = {}
 
@@ -116,7 +117,7 @@ aliases['centralVeto'] = {
 }
 
 
-}
+
 aliases['bReq'] = {
     'expr': 'Sum$(CleanJet_pt > 30. && abs(CleanJet_eta) < 2.5 && Jet_btagDeepB[CleanJet_jetIdx] > 0.4941) >= 1'
 }

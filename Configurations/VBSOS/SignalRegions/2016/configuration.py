@@ -1,7 +1,7 @@
 # example of configuration file
 
 tag = '2016_sr'
-outputDir = '2016_sr'
+outputDir = 'rootFile'
 treeName = 'Events'
 
 # luminosity to normalize to

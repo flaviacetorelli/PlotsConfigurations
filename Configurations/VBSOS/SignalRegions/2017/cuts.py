@@ -19,7 +19,7 @@ supercut = 'mll>50  \
            '
 
 
-           '
+           
 ### USARE METfix
 
 ##signal region        
@@ -27,14 +27,12 @@ cuts['sr']  = 'mjj>500 \
                           && detajj > 3.5 \
                           && Alt$(CleanJet_pt[0],0.)>30 && Alt$(CleanJet_pt[1],0.)>30 \
                           && bVeto \
-
               '         
 cuts['sr_me']  = 'mjj>500 \
                           && Alt$(Lepton_pdgId[0]*Lepton_pdgId[1],0)==-11*13 \
                           && detajj > 3.5 \
                           && Alt$(CleanJet_pt[0],0.)>30 && Alt$(CleanJet_pt[1],0.)>30 \
                           && bVeto \
-
               '       
 
 cuts['sr_ee']  = 'mjj>500 \
@@ -42,13 +40,13 @@ cuts['sr_ee']  = 'mjj>500 \
                           && detajj > 3.5 \
                           && Alt$(CleanJet_pt[0],0.)>30 && Alt$(CleanJet_pt[1],0.)>30 \
                           && bVeto \
-
+               '
 cuts['sr_mm']  = 'mjj>500 \
                           && Alt$(Lepton_pdgId[0]*Lepton_pdgId[1],0)==-13*13 \
                           && detajj > 3.5 \
                           && Alt$(CleanJet_pt[0],0.)>30 && Alt$(CleanJet_pt[1],0.)>30 \
                           && bVeto \
-
+                 '
 ##signal region   tight
 
 cuts['sr_T']  = '         mjj>500 \
