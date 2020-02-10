@@ -263,7 +263,7 @@ samples['qqH_hww'] = {
 signals = []
 samples['WWewk'] = {
     'name': nanoGetSampleFiles(mcDirectory, 'WpWmJJ_EWK_noTop'),
-    'weight': mcCommonWeight + '*(Sum$(abs(GenPart_pdgId)==6 || GenPart_pdgId==25)==0)', #filter tops and Higgs
+    'weight': mcCommonWeight + '*(0.08875/0.3452)*(Sum$(abs(GenPart_pdgId)==6 || GenPart_pdgId==25)==0)', #filter tops and Higgs, factor to adjust the XS
     'FilesPerJob': 2
 }
 signals.append('WWewk')

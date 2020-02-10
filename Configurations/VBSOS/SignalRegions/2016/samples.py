@@ -101,7 +101,7 @@ mcCommonWeight = 'XSWeight*SFweight*PromptGenLepMatch2l*METFilter_MC'
 ###########################################
 #############  BACKGROUNDS  ###############
 ###########################################
-signals = []
+
 ###### DY #######
 
 ptllDYW_NLO = '(0.876979+gen_ptll*(4.11598e-03)-(2.35520e-05)*gen_ptll*gen_ptll)*(1.10211 * (0.958512 - 0.131835*TMath::Erf((gen_ptll-14.1972)/10.1525)))*(gen_ptll<140)+0.891188*(gen_ptll>=140)'
@@ -238,14 +238,15 @@ samples['qqH_hww'] = {
 #############   SIGNALS  ##################
 ###########################################
 
-
+signals = []
 samples['WWewk'] = {
     'name': nanoGetSampleFiles(mcDirectory, 'WpWmJJ_EWK_noTop'),
-    'weight': mcCommonWeight + '*(Sum$(abs(GenPart_pdgId)==6 || GenPart_pdgId==25)==0)*(lhe_mW1[0] > 60. && lhe_mW1[0] < 100. && lhe_mW2[0] > 60. && lhe_mW2[0] < 100.)', #filter tops and Higgs, limit w mass
+    'weight': mcCommonWeight + '*(Sum$(abs(GenPart_pdgId)==6 )==0)*(lhe_mW1[0] > 63. && lhe_mW1[0] < 100. && lhe_mW2[0] > 63. && lhe_mW2[0] < 100.)', #filter tops and Higgs, cuts on Wmass
     'FilesPerJob': 4
 }
 
 signals.append('WWewk')
+
 ###########################################
 ################## FAKE ###################
 ###########################################
