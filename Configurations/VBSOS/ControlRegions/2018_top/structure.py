@@ -14,7 +14,7 @@ structure['top']  = {
      'isData'   : 0
 }
 
-structure['WpWmJJ_QCD_noTop']  = { 
+structure['WWqcd']  = { 
      'isSignal' : 0,
      'isData'   : 0
 }
