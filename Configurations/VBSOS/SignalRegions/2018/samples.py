@@ -34,8 +34,8 @@ mcProduction = 'Autumn18_102X_nAODv5_Full2018v5'
 
 dataReco = 'Run2018_102X_nAODv5_Full2018v5'
 
-mcSteps = 'MCl1loose2018v5__MCCorr2018v5__l2loose__l2tightOR2018v5{var}__wwSel'
-
+#mcSteps = 'MCl1loose2018v5__MCCorr2018v5__l2loose__l2tightOR2018v5{var}__wwSel'
+mcSteps = 'MCl1loose2018v5__MCCorr2018v5__l2loose__l2tightOR2018v5{var}'
 #fakeSteps = 'DATAl1loose2018v5__l2loose__fakeW__wwSel'
 fakeSteps = 'DATAl1loose2018v5__l2loose__fakeW'
 
@@ -58,8 +58,8 @@ def makeMCDirectory(var=''):
     else:
         return os.path.join(treeBaseDir, mcProduction, mcSteps.format(var=''))
 
-#mcDirectory = makeMCDirectory()
-mcDirectory = '/eos/cms/store/group/phys_higgs/cmshww/amassiro/HWWNano/Autumn18_102X_nAODv5_Full2018v5/MCl1loose2018v5__MCCorr2018v5__l2loose__l2tightOR2018v5'
+mcDirectory = makeMCDirectory()
+#mcDirectory = '/eos/cms/store/group/phys_higgs/cmshww/amassiro/HWWNano/Autumn18_102X_nAODv5_Full2018v5/MCl1loose2018v5__MCCorr2018v5__l2loose__l2tightOR2018v5'
 fakeDirectory = os.path.join(treeBaseDir, dataReco, fakeSteps)
 dataDirectory = os.path.join(treeBaseDir, dataReco, dataSteps)
 

@@ -8,7 +8,7 @@ supercut = 'mll>50  \
             && Lepton_pt[0]>25 \
             && Lepton_pt[1]>10 \
             && (abs(Lepton_pdgId[1])==13 || Lepton_pt[1]>13) \
-            && Alt$(Lepton_pt[2],0.)<10 \
+            && (nLepton>=2 && Alt$(Lepton_pt[2],0)<10) \
             && (MET_pt > 20 || PuppiMET_pt>20) \
            '
 
@@ -70,16 +70,6 @@ cuts['top_mm']  = '         mjj>500 \
                                   ) \
                                  '                 
   
-##WWjj regions      
-cuts['lowmjj'] =  'Alt$(CleanJet_pt[0],0.)>30 && Alt$(CleanJet_pt[1],0.)>30 && mjj < 500 && bVeto'
-cuts['lowmjj_ee'] =  'Alt$(CleanJet_pt[0],0.)>30 && Alt$(CleanJet_pt[1],0.)>30 && mjj < 500 && bVeto && Lepton_pdgId[0]*Lepton_pdgId[1]==-11*11'
-    
-cuts['lowmjj_mm'] = 'Alt$(CleanJet_pt[0],0.)>30 && Alt$(CleanJet_pt[1],0.)>30 && mjj < 500 && bVeto && Lepton_pdgId[0]*Lepton_pdgId[1]==-13*13'
-    
-
-cuts['lowmjj_em'] = 'Alt$(CleanJet_pt[0],0.)>30 && Alt$(CleanJet_pt[1],0.)>30 && mjj < 500 && bVeto && Lepton_pdgId[0]*Lepton_pdgId[1]==-11*13'
-    
-
 
 
 

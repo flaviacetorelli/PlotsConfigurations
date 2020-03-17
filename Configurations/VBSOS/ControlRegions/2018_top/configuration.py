@@ -27,7 +27,7 @@ plotFile = 'plot.py'
 structureFile = 'structure.py'
 # used by mkPlot to define output directory for plots
 # different from "outputDir" to do things more tidy
-outputDirPlots = '/eos/user/f/fcetorel/www/VBS_OS/test/2018/top_nuisances'
+outputDirPlots = '/eos/user/f/fcetorel/www/VBS_OS/test/2018/top_v2'
 # nuisances file for mkDatacards and for mkShape
 nuisancesFile = 'nuisances.py'
 # used by mkDatacards to define output directory for datacards

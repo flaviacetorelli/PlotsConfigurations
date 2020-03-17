@@ -50,7 +50,7 @@ if    'iihe' in SITE:
   treeBaseDir = '/pnfs/iihe/cms/store/user/xjanssen/HWW2015'
 elif  'cern' in SITE:
   treeBaseDir = '/eos/cms/store/group/phys_higgs/cmshww/amassiro/HWWNano'
-
+'''
 def makeMCDirectory(var=''):
     if var:
         #return os.path.join(treeBaseDir, mcProduction, mcSteps.format(var='__' + var))
@@ -58,6 +58,25 @@ def makeMCDirectory(var=''):
     else:
         #return os.path.join(treeBaseDir, mcProduction, mcSteps.format(var=''))
         return '/afs/cern.ch/user/y/yiiyama/public/hwwvirtual/Summer16/l2tightOR'
+'''
+
+def makeMCDirectory(var=''):
+    if var:
+        #return os.path.join(treeBaseDir, mcProduction, mcSteps.format(var='__' + var))
+        return '/eos/cms/store/group/phys_higgs/cmshww/amassiro/HWWNano/Summer16_102X_nAODv4_Full2016v5/MCl1loose2016v5__MCCorr2016v5__l2loose__l2tightOR2016v5__{var}'.format(var=var)
+    else:
+        #return os.path.join(treeBaseDir, mcProduction, mcSteps.format(var=''))
+        return '/eos/cms/store/group/phys_higgs/cmshww/amassiro/HWWNano/Summer16_102X_nAODv4_Full2016v5/MCl1loose2016v5__MCCorr2016v5__l2loose__l2tightOR2016v5'
+
+
+def makeMCDirectorySig(var=''):
+    if var:
+        #return os.path.join(treeBaseDir, mcProduction, mcSteps.format(var='__' + var))
+        return '/eos/cms/store/group/phys_higgs/cmshww/amassiro/HWWNano/Summer16_102X_nAODv5_SigOnly_Full2016v5/MCl1loose2016v5__MCCorr2016v5__l2loose__l2tightOR2016v5__{var}'.format(var=var)
+    else:
+        #return os.path.join(treeBaseDir, mcProduction, mcSteps.format(var=''))
+        return '/eos/cms/store/group/phys_higgs/cmshww/amassiro/HWWNano/Summer16_102X_nAODv5_SigOnly_Full2016v5/MCl1loose2016v5__MCCorr2016v5__l2loose__l2tightOR2016v5'
+
 
 #mcDirectory = makeMCDirectory()
 #mcDirectoryMissing = '/eos/cms/store/group/phys_higgs/cmshww/amassiro/HWWNano/Summer16_102X_nAODv4_Full2016v5/MCl1loose2016v5__MCCorr2016v5__l2loose__l2tightOR2016v5/'

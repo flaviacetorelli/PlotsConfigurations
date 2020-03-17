@@ -41,25 +41,25 @@ HiggsXS = HiggsXSection()
 nuisances['lumi_Uncorrelated'] = {
     'name': 'lumi_13TeV_2018',
     'type': 'lnN',
-    'samples': dict((skey, '1.015') for skey in mc if skey not in ['WW', 'top', 'DY'])
+    'samples': dict((skey, '1.015') for skey in mc if skey not in ['top'])
 }
 
 nuisances['lumi_XYFact'] = {
     'name': 'lumi_13TeV_XYFact',
     'type': 'lnN',
-    'samples': dict((skey, '1.02') for skey in mc if skey not in ['WW', 'top', 'DY'])
+    'samples': dict((skey, '1.02') for skey in mc if skey not in ['top'])
 }
 
 nuisances['lumi_LScale'] = {
     'name': 'lumi_13TeV_LSCale',
     'type': 'lnN',
-    'samples': dict((skey, '1.002') for skey in mc if skey not in ['WW', 'top', 'DY'])
+    'samples': dict((skey, '1.002') for skey in mc if skey not in ['top'])
 }
 
 nuisances['lumi_CurrCalib'] = {
     'name': 'lumi_13TeV_CurrCalib',
     'type': 'lnN',
-    'samples': dict((skey, '1.002') for skey in mc if skey not in ['WW', 'top', 'DY'])
+    'samples': dict((skey, '1.002') for skey in mc if skey not in ['top'])
 }
 
 #### FAKES
@@ -718,17 +718,16 @@ nuisances['Topnorm1j']  = {
                'type'  : 'rateParam',
                'cuts'  : cuts1j
               }
-
+'''
 nuisances['Topnorm2j']  = {
-               'name'  : 'CMS_hww_Topnorm2j',
+               'name'  : 'CMS_Topnorm2j',
                'samples'  : {
                    'top' : '1.00',
                    },
                'type'  : 'rateParam',
-               'cuts'  : cuts2j
               }
 
-'''
+
 for n in nuisances.values():
     n['skipCMS'] = 1
 
